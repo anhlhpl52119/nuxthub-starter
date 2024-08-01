@@ -3,7 +3,7 @@ export default eventHandler(async (event) => {
 
   const todo = await useDrizzle().insert(tables.todos).values({
     title,
-    createdAt: new Date()
+    createdAt: new Date(),
   }).returning().get()
 
   return todo

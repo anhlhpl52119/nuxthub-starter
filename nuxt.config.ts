@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
   modules: [
     '@nuxthub/core',
-    '@nuxt/eslint'
+    '@nuxt/eslint',
   ],
   hub: {
     database: true,
@@ -15,8 +15,8 @@ export default defineNuxtConfig({
   nitro: {
     experimental: {
       // Enable Server API documentation within NuxtHub
-      openAPI: true
-    }
+      openAPI: true,
+    },
   },
   // Development
   devtools: { enabled: true },

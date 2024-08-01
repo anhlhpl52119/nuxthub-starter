@@ -1,5 +1,4 @@
 export default eventHandler(async () => {
-
   const db = hubDatabase()
   await db.exec('CREATE TABLE IF NOT EXISTS messages (id INTEGER PRIMARY KEY, text TEXT, created_at INTEGER)')
 
