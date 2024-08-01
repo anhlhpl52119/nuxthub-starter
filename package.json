@@ -7,6 +7,7 @@
     "build": "nuxt build",
     "preview": "nuxt preview",
     "deploy": "npx nuxthub deploy",
+    "db:gen": "drizzle-kit generate",
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
@@ -15,10 +16,12 @@
   "dependencies": {
     "@nuxt/eslint": "^0.4.0",
     "@nuxthub/core": "^0.7.1",
+    "drizzle-orm": "^0.32.1",
     "nuxt": "^3.12.4"
   },
   "devDependencies": {
     "@nuxt/eslint-config": "^0.4.0",
+    "drizzle-kit": "^0.23.1",
     "eslint": "^9.8.0",
     "vue-tsc": "^2.0.29",
     "wrangler": "3.67.1"
