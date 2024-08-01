@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   hub: {
     database: true,
     kv: true,
-    blob: true,
+    // blob: true, // currently not supported free license
     cache: true,
   },
   nitro: {
