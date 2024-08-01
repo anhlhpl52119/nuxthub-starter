@@ -1,0 +1,58 @@
+{
+  "path-intellisense.mappings": {
+    "@/": "${workspaceRoot}"
+  },
+
+  // Vue
+  "vue.inlayHints.missingProps": true,
+  "vue.autoInsert.dotValue": true,
+
+  // format on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // typescript max memory
+  "typescript.tsserver.maxTsServerMemory": 4096,
+
+
+  // search exclude
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.git": true,
+    "**/.gitignore": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "out": true,
+    "dist": true
+  },
+
+  // Ignore background worker & files watcher
+  "files.exclude": {
+    "**/.cache": true,
+    "**/.editorconfig": true,
+    "**/.eslintcache": true,
+    "**/.idea": true,
+    "**/tmp": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.vscode/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/bower_components/**": true,
+    "**/dist/**": true,
+    "**/yarn.lock": true,
+    "pnpm-lock.yaml": true
+  }
+}
