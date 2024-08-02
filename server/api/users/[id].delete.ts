@@ -1,15 +1,15 @@
 export default eventHandler(async (event) => {
   const { id } = getRouterParams(event)
 
-  const deletedTodo = await useDrizzle().delete(tables.todos).where(and(
-    eq(tables.todos.id, Number(id)),
+  const deleteUser = await useDrizzle().delete(tables.users).where(and(
+    eq(tables.users.id, Number(id)),
   )).returning().get()
 
-  if (!deletedTodo) {
+  if (!deleteUser) {
     throw createError({
       statusCode: 404,
       message: 'Todo not found',
     })
   }
-  return deletedTodo
+  return deleteUser
 })

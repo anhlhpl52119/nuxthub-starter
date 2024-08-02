@@ -1,7 +1,9 @@
 <template>
   <main>
-    <ImageGallery />
+    <!-- <ImageGallery /> -->
     <RedirectsPanel />
     <MessagesPanel />
   </main>
 </template>
+<script setup lang="ts">
+</script>
