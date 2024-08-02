@@ -14,6 +14,7 @@ async function updateRedirects() {
     method: 'PUT',
     body,
   })
+
   await refresh()
 }
 </script>
@@ -23,7 +24,7 @@ async function updateRedirects() {
     <h3>Server redirects</h3>
 
     <form @submit.prevent="updateRedirects">
-      <p><textarea v-model="redirects?.text" rows="6" placeholder="/from /to (one redirect per line)" style="width: 300px;" /></p>
+      <p><textarea v-model="redirects!.text" rows="6" placeholder="/from /to (one redirect per line)" style="width: 300px;" /></p>
       <button type="submit">
         Save redirects
       </button>

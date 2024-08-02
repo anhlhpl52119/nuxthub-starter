@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { data: messages, refresh } = await useFetch('/api/messages')
 const newMessage = ref('')
-
+const clientDate = ref(new Date().getTime())
 async function sendMessage() {
   if (!newMessage.value.trim())
     return
@@ -18,6 +18,7 @@ async function sendMessage() {
 
 <template>
   <div>
+    <h3>Client {{ clientDate }}</h3>
     <h3>Messages</h3>
     <form @submit.prevent="sendMessage">
       <input v-model="newMessage" placeholder="Type a message">

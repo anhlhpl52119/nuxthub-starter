@@ -1,9 +1,16 @@
+<script setup lang="ts">
+definePageMeta({
+  name: 'home',
+})
+</script>
+
 <template>
   <main>
-    <!-- <ImageGallery /> -->
-    <RedirectsPanel />
+    <!-- <RedirectsPanel /> -->
     <MessagesPanel />
+
+    <NuxtLink :to="{ name: 'client', params: { id: 'abd' } }">
+      back to client
+    </NuxtLink>
   </main>
 </template>
-<script setup lang="ts">
-</script>
