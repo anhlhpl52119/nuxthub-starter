@@ -1,6 +1,4 @@
 <script setup lang="ts">
-// const { data: images, refresh } = await useFetch('/api/images')
-
 // async function uploadImage(e: Event) {
 //   // https://hub.nuxt.com/docs/storage/blob#useupload
 //   const upload = useUpload('/api/images/upload', {
