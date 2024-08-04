@@ -9,6 +9,5 @@ export default eventHandler(async (event) => {
     password,
     createdAt: new Date(),
   }).returning().get()
-
   return user
 })
