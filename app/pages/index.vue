@@ -6,7 +6,6 @@ definePageMeta({
 
 <template>
   <main>
-    <!-- <RedirectsPanel /> -->
     <MessagesPanel />
 
     <NuxtLink :to="{ name: 'client', params: { id: 'abd' } }">
