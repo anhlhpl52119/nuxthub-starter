@@ -21,25 +21,5 @@
 <template>
   <div>Gallery</div>
   <!-- <div>
-    <h3>Images</h3>
-    <form @submit.prevent="uploadImage">
-      <label>Upload an image: <input type="file" name="image" accept="image/jpg,image/png"></label>
-      <button type="submit">
-        Upload
-      </button>
-    </form>
-    <p>
-      <img
-        v-for="image of images"
-        :key="image.pathname"
-        width="200"
-        :src="`/images/${image.pathname}`"
-        :alt="image.pathname"
-        @dblclick="deleteImage(image.pathname)"
-      >
-    </p>
-    <p v-if="images?.length">
-      <i>Tip: delete an image by double-clicking on it.</i>
-    </p>
   </div> -->
 </template>
