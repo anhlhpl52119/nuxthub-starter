@@ -30,7 +30,7 @@ async function sendMessage() {
       {{ message.text }} - {{ new Date(message?.created_at ?? '').toLocaleString() }}
     </p>
     <p v-if="!messages?.length">
-      No messages yet
+      No messages
     </p>
   </div>
 </template>
