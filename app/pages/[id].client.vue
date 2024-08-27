@@ -6,6 +6,6 @@ definePageMeta({
 
 <template>
   <NuxtLink :to="{ name: 'home' }">
-    home page
+    home page obg
   </NuxtLink>
 </template>
